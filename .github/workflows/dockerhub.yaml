@@ -22,5 +22,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          context: "{{defaultContext}}:dockerhub"
           tags: koslib/awscliv2-alpine:${{github.ref_name}}
